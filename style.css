@@ -1,0 +1,534 @@
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    height: 5rem;
+}
+
+.bg-img{
+    background-image: url(./photos/home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+}
+
+/* home */
+.home{
+    height: 100vh;
+   padding-top: 5vh;
+font-family: 'Tilt Prism', cursive;
+}
+
+.home h3{
+    padding: 3vh;
+}
+
+.home button{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 50vh 10vh 5vh 97vh;
+}
+
+.modal-footer #button{
+    margin: 1rem;
+}
+
+/* About */
+.about{
+    padding-bottom: 3vh;
+}
+
+.about h3{
+    padding-bottom: 2vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.abt-p{
+    padding: 5vh;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.about h3{
+    color: darkorange;
+    margin-top: 2rem;
+}
+
+/* location */
+.location{
+    background:#202124;
+}
+
+.location h2{
+    color:darkorange;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.card2 {
+    position: relative;
+    width: 325px;
+    height: 450px;
+    background: #000;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+.poster {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.poster::before {
+    content: '';
+    position: absolute;
+    bottom: -45%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: .3s;
+}
+
+.card2:hover .poster::before {
+    bottom: 0;
+}
+
+.poster img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.card2:hover .poster img {
+    transform: scale(1.1);
+}
+
+.details {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding:1rem 1.5em 1.5rem 2em;
+    background: #000a;
+    backdrop-filter: blur(16px) saturate(120%);
+    transition: .3s;
+    color: #fff;
+    z-index: 2;
+}
+
+.card2:hover .details {
+    bottom: 0;
+}
+
+.details h1,
+.details h2 {
+    font-weight: 700;
+}
+
+.details h1 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.details h2 {
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 10px;
+    opacity: .6;
+}
+
+.details .rating {
+    position: relative;
+    margin-bottom: 15px;
+    display: flex;
+    gap: .25em;
+}
+
+.details .rating i {
+    color: #e3c414;
+}
+
+.details .rating span {
+    margin-left: 0.25em;
+}
+
+.details .tags {
+    display: flex;
+    gap: .375em;
+    margin-bottom: .875em;
+    font-size: .85em;
+}
+
+.details .tags span {
+    padding: .35rem .65rem;
+    color: #fff;
+    border: 1.5px solid rgba(255 255 255 / 0.4);
+    border-radius: 4px;
+    border-radius: 50px;
+}
+
+.details .desc {
+    color: #fff;
+    opacity: .8;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+.details .cast h3 {
+    margin-bottom: .5em;
+}
+
+.details .cast ul {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    width: 100%;
+}
+
+.details .cast ul li {
+    list-style: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1.5px solid #fff;
+}
+
+.details .cast ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+/* menu */
+#menu{
+    background-color: #202124;
+    color: darkorange;
+    padding: 2rem 2rem 2rem 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 1rem;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    max-width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    padding-bottom: 1rem;
+}
+
+/* offers */
+#offers{
+    background-color: #202124;
+    padding-bottom: 2rem;
+}
+
+#carousel{
+    height: 36rem;
+
+}
+
+#ofr{
+    color:darkorange;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 0rem 1rem 0rem 1rem;
+}
+.d-block{
+    height: 36rem;
+}
+
+
+/* Booking */
+#booking{
+    background-color: #202124;
+    color: aliceblue; 
+}
+
+.booking h3{
+    color:darkorange;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 1rem 1rem 0rem 1rem;
+}
+.modal{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Gallery */
+#gallery{
+    background-color: #202124;
+}
+
+.gallery h2{
+    color:darkorange;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.gallery img{
+    width: 88%;
+}
+
+/* Review */
+#review{
+    background-color: #202124;
+
+}
+
+#review h2{
+    color:darkorange;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.review{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px 50px;
+    padding: 30px 50px;
+}
+
+.content h3{
+    margin: 0px 0px 0px 5rem;
+}
+
+.content p{
+    margin: 1rem 0px 0px 1rem;
+}
+
+.rating{
+    margin-top: 1rem;
+}
+
+/* footer */
+.footer{
+    background-color:#24262b;
+    padding: 1rem 1rem 0rem 1rem;
+}
+.ftr1{
+    margin:2rem  0rem 1rem 0rem;
+}
+.ftr2{
+    margin:1rem  0rem 1rem 10rem;
+}
+.ftr3{
+    margin:1rem  0rem 1rem 3rem;
+}
+.col p{
+    color: #ffffff;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color:darkorange;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+	color:darkorange;
+	padding-left: 8px;
+}
+
+.footer-col .social-links a{
+	margin: 2rem;
+    size: 5rem;
+}
+
+.social{
+    padding: 2rem 0rem 0rem 0rem;
+}
+.copyright{
+    background-color: #202124;
+    color: #ffffff;
+    text-align: center;
+    height: 2.5rem;
+    width: 100%;
+    padding-top: .5rem;
+}
+
+#scroll {
+    position: fixed;
+    bottom: 40px;
+    float: right;
+    right: 4%;
+    left: 96%;
+    padding: 1rem  1px 0rem 1.2rem;
+    color: darkorange;
+    background: rgba(0, 0, 0, 0.667);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    
+}
+/* media queries */
+
+@media screen and (width<600px) {
+
+    .about .col-6{
+    width: 100%;
+    }
+    .home .caption{
+        margin: 5rem 1rem;
+    }
+    .home .btn{
+      margin: 4rem 2rem 2rem 6.5rem;
+    }
+    .navbar .topnav{
+        display: none;
+    }
+    .navbar-nav{
+        display: none;
+    }
+    
+    #abt{
+        background-color: #000;
+        padding: 0rem 1rem 1rem 1rem;
+    }
+    .abt{
+        padding: .5rem .5rem 1rem .5rem;
+        text-align:center;
+    }
+    
+    .offers{
+        padding: 2rem .5rem;
+    }
+    .gallery #vid{
+       margin: .5rem;
+       width: 100%;
+    }
+    .gallery .img{
+        margin: 5px 1px;
+    }
+    .carousel-inner{
+        width: 100%;
+        height:auto;
+    }
+    .ftr2{
+        margin: .5rem;
+    }
+    .scroll-container{
+        margin: 3px;
+    }
+    #scroll{
+        padding: 15px 1px 0px 19px;
+        right: 10%;
+        left: 86%;
+    }
+    
+}
+
+@media screen and (max-width:800px){
+    .scroll-container{
+        margin: 5px;
+    }
+    #scroll{
+        right: 10%;
+        left: 93%;
+    }  
+}
+@media screen and (max-width:1200px){
+    .scroll-container{
+        margin: 5px;
+    }
+    #scroll{
+        left: 94%;
+    }  
+}
+@media screen and (max-width:640px){
+    .scroll-container{
+        margin: 3px;
+    }
+    #scroll{
+        left: 90%;
+    }  
+}
+@media screen and (max-width:375px){
+    .scroll-container{
+        margin: 3px;
+    }
+    #scroll{
+        left: 85%;
+    }  
+}
+
+
+
+

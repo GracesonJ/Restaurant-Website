@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boosted RestoCafe</title>
+  <link rel="stylesheet" href="style.css">
+
+    <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair:wght@300&family=Tilt+Prism&display=swap" rel="stylesheet">
+
+<!--font awsome-->
+<script src="https://kit.fontawesome.com/10c7850017.js" crossorigin="anonymous"></script>
+
+<!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  
+</head>
+<body>
+  <header id="head">
+      <div class="bg-img "></div>
+      <a id="top"></a>
+
+        <nav class="container navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand text-warning" href="#">Boosted RestoCafe</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class=" collapse justify-content-end navbar-collapse topnav " id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item ">
+                    <a class="nav-link  " aria-current="page" href="#about">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#location" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Locations
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item " href="#location">Kochi</a></li>
+                      <li><a class="dropdown-item " href="#location">Chennai</a></li>
+                      <li><a class="dropdown-item " href="#location">Bengaluru</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#menu">Dishes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#offers">Offers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#review">Reviews</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#book">Book Now</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+  </header>
+  <section id="home">
+        <div class="home" >
+            <h3 class="text-center caption text-light">Nothing awakens reminiscence like an aroma <br> <br>
+            </h3>
+            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal">
+              Book your Seats
+            </button>
+            <!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title text-warning">Boosted RestoCafe</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <h3>For Booking</h3>
+        <form>   
+          <div class="mb-4 mt-0">
+            <div class="row">
+              <div class="col">
+                <label for="InputName1" class="form-label">Name</label>
+                <input type="text" class="form-control" placeholder="Enter Name" name="Name">
+              </div>
+              <div class="col">
+                <label for="InputEmail1" class="form-label">Email</label>
+                <input type="password" class="form-control" placeholder="Enter email" name="mail">
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="row">
+              <div class="col">
+                <label for="InputMobile1" class="form-label">Mobile</label>
+                <input type="text" class="form-control" placeholder="Enter Mobile Number" name="mobile">
+              </div>
+              <div class="col">
+                <label for="InputPlace1" class="form-label">Place</label>
+                <input type="text" class="form-control" placeholder="Enter your Place" name="place">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="InputSeat1" class="form-label">No:of Seats</label>
+              <input type="number" class="form-control" placeholder="Enter No:of Seats" name="seat">
+            </div>
+            <div class="col mb-3">
+              <label for="InputDate1" class="form-label">Pick Date</label>
+              <input type="month" class="form-control" placeholder="Enter Date" name="date">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" id="button" data-bs-dismiss="modal">Book</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+  </section>
+  <section id="about">
+        <div class="container about" >
+            <div class="container-fluid text-center">
+                <div class="row">
+                    <h3>About Us</h3>
+                  <div class="col-6">
+                    <img class="img-fluid img" src="./photos/about.jpg" alt="image">
+                  </div>
+                  <div class="col-6 ">
+                    <p class="abt-p text-center abt">
+                        “Here, at Terramia, in the center of London, we don’t accept compromises. Not about our food. All our ingredients are sourced from local producers to ensure quality and freshness. <br><br>
+
+That's why our menu is seasonal. Today, we may serve you creamy mushroom soup, and tomorrow we may have a classic ratatouille on the menu. But the taste is always the same: finger-licking good!
+<br><br>
+Don't hesitate to pay us a visit if you share our passion for fresh dishes cooked with only the best ingredients. We promise an experience that will keep you coming back for more!”<br>
+<h4><-Boosted RestoCafe-></h4>
+                    </p>
+                  </div>
+                </div>
+        </div>
+  </section>
+  <section id="location">
+    <div class="location">
+      <h2>Our Locations</h2>
+      <div class="wrapper">
+        <div class="card2">
+          <div class="poster"><img src="./photos/location1.jpg" alt="Location Unknown"></div>
+          <div class="details">
+            <h1>Kochi </h1>
+            <h2>Since • 1999 </h2>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>4.2/5</span>
+            </div>
+            <div class="tags">
+              <span class="tag">Indian</span>
+              <span class="tag">Arabian</span>
+              <span class="tag">Italian</span>
+            </div>
+            <p class="desc">
+              Forget about the daily stress and come relax with us. After tasting any of our menu items, you will never want to leave!"
+            </p>
+            <div class="cast">
+              <h3>Reviews</h3>
+              <ul>
+                <li><img src="https://i.postimg.cc/jqgkqhSb/cast-11.jpg" alt="Marco Andrews" title="Marco Andrews"></li>
+                <li><img src="https://i.postimg.cc/8P7X7r7r/cast-12.jpg" alt="Rebecca Floyd" title="Rebecca Floyd"></li>
+                <li><img src="https://i.postimg.cc/2SvHwRFk/cast-13.jpg
+      " alt="Antonio Herrera" title="Antonio Herrera"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="poster"><img src="./photos/location2.jpg" alt="Location Unknown"></div>
+          <div class="details">
+            <h1>Chennai</h1>
+            <h2>Since • 2002 </h2>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>4/5</span>
+            </div>
+            <div class="tags">
+              <span class="tag">Indian</span>
+              <span class="tag">Arabian</span>
+              <span class="tag">Italian</span>
+            </div>
+            <p class="desc">
+              Forget about the daily stress and come relax with us. After tasting any of our menu items, you will never want to leave!"
+            </p>
+            <div class="cast">
+              <h3>Reviews</h3>
+              <ul>
+                <li><img src="https://i.postimg.cc/yY2QcYRp/cast-21.jpg" alt="Angelina Whyte" title="Angelina Whyte"></li>
+                <li><img src="https://i.postimg.cc/R0BgpsXc/cast-22.jpg" alt="Ivan Benson" title="Ivan Benson"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="poster"><img src="./photos/location3.jpg" alt="Location Unknown"></div>
+          <div class="details">
+            <h1>Bengaluru</h1>
+            <h2>Since • 2005 </h2>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>4.7/5</span>
+            </div>
+            <div class="tags">
+              <span class="tag yellow">Indian</span>
+              <span class="tag"> Arabian </span>
+              <span class="tag blue">Italian </span>
+            </div>
+            <p class="desc">
+              Forget about the daily stress and come relax with us. After tasting any of our menu items, you will never want to leave!"
+            </p>
+            <div class="cast">
+              <h3>Reviews</h3>
+              <ul>
+                <li><img src="https://i.postimg.cc/xd3twv4B/cast-31.jpg" alt="Jessica Enduro" title="Jessica Enduro"></li>
+                <li><img src="https://i.postimg.cc/C1MmSZy5/cast-32.jpg" alt="Charles Garcia" title="Charles Garcia"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="menu">
+    <div class="menu">
+            <div class="container-fluid bg-3  text-center">    
+                <h3>Dishes To Explore</h3><br>
+                <div class="cards">
+                  <div class="row row-cols-1 row-cols-md-4 g-4 container-fluid">
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="./photos/food1.jpg" id="fdimg" class="card-img-top " alt="image">
+                        <div class="card-body">
+                          <h5 class="card-title">Idily</h5>
+                        <div class="">
+                          <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal2">
+                            Order Now
+                          </button>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal" id="myModal2">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <!-- Modal Header -->
+                              <div class="modal-header">
+                                <h4 class="modal-title">Boosted RestoCafe</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                              </div>
+                              <!-- Modal body -->
+                              <div class="modal-body">
+                               Order Placed
+                              </div>
+                              <!-- Modal footer -->
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                        <div class="card-footer">
+                          <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="./photos/food2.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                          <h5 class="card-title">Dosa</h5>
+                          <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal2">
+                            Order Now
+                          </button>                        </div>
+                        <div class="card-footer">
+                          <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="./photos/food3.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                          <h5 class="card-title">Appam</h5>
+                          <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal2">
+                            Order Now
+                          </button>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="./photos/food4.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                          <h5 class="card-title">Idiyappam</h5>
+                          <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal2">
+                            Order Now
+                          </button>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="./photos/food5.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                          <h5 class="card-title">Biriyani</h5>
+                          <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal2">
+                            Order Now
+                          </button>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="./photos/food6.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                          <h5 class="card-title">Mandhi</h5>
+                          <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal2">
+                            Order Now
+                          </button>                        </div>
+                        <div class="card-footer">
+                          <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="./photos/food7.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                          <h5 class="card-title">Pulav</h5>
+                          <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal2">
+                            Order Now
+                          </button>                        </div>
+                        <div class="card-footer">
+                          <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="./photos/food8.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                          <h5 class="card-title">Meals</h5>
+                          <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal2">
+                            Order Now
+                          </button>                        </div>
+                        <div class="card-footer">
+                          <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="./photos/food9.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                          <h5 class="card-title">Parota</h5>
+                          <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal2">
+                            Order Now
+                          </button>                        </div>
+                        <div class="card-footer">
+                          <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="./photos/food10.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                          <h5 class="card-title">Grill Chicken</h5>
+                          <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal2">
+                            Order Now
+                          </button>                        </div>
+                        <div class="card-footer">
+                          <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="./photos/food11.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                          <h5 class="card-title">Puttu</h5>
+                          <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal2">
+                            Order Now
+                          </button>                        </div>
+                        <div class="card-footer">
+                          <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="./photos/food12.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                          <h5 class="card-title">Alfham</h5>
+                          <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal2">
+                            Order Now
+                          </button>                        </div>
+                        <div class="card-footer">
+                          <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              
+
+  </section>
+  <section id="offers">
+        <div class="container offers" >
+            <h2 id="ofr">Offers</h2>
+            <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner" id="carousel">
+                <div class="carousel-item active" >
+                  <img src="./photos/ofr4.jpeg" class="d-block w-100"  alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="./photos/ofr2.jpeg" class="d-block w-100" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="./photos/ofr1.jpeg" class="d-block w-100" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="./photos/ofr3.jpeg" class="d-block w-100" alt="image">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+        </div>
+  </section>
+  <section id="gallery">
+      <div class="gallery container">
+        <h2>Gallery</h2>
+        <div class="row align-items-start">
+          <div class="col vid">
+            <iframe width="560" height="315" id="vid" src="https://www.youtube.com/embed/Y88uxC0OmwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+       
+            <div class=" col img">
+              <img src="./photos/resto.jpg" alt="image">
+            </div>
+        </div>
+      </div>
+
+  </section>
+  <section id="review">
+      <h2>Reviews</h2>
+      <div class="review">
+        <div class="card">
+          <div class="img-box">
+            <img src="./photos/review1.jpg" alt="image">
+          </div>
+          <div class="content">
+            <h3>John j</h3>
+            <p>"Great food and service, highly recommended!"<br><span>- John Joe </span></p>
+          </div>
+          <div class="rating">
+            <i class="fa-solid fa-star" style="color: #f6b937;"></i>
+            <i class="fa-solid fa-star" style="color: #f6b937;"></i>
+            <i class="fa-solid fa-star" style="color: #f6b937;"></i>
+            <i class="fa-solid fa-star" style="color: #f6b937;"></i>
+            <i class="fa-regular fa-star" style="color: #f6b937;"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-box">
+            <img src="./photos/review1.png" alt="image">
+          </div>
+          <div class="content">
+            <h3>Stephy M</h3>
+            <p>"Great food and service, highly recommended!"<br><span>- Stephy M </span></p>
+          </div>
+          <div class="rating">
+            <i class="fa-solid fa-star" style="color: #f6b937;"></i>
+            <i class="fa-solid fa-star" style="color: #f6b937;"></i>
+            <i class="fa-solid fa-star" style="color: #f6b937;"></i>
+            <i class="fa-solid fa-star" style="color: #f6b937;"></i>
+            <i class="fa-solid fa-star" style="color: #f6b937;"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-box">
+            <img src="./photos/review2.jpg" alt="image">
+          </div>
+          <div class="content">
+            <h3>Loe Jr</h3>
+            <p>"Great food and service, highly recommended!"<br><span>- Loe Jr </span></p>
+          </div>
+          <div class="rating">
+            <i class="fa-solid fa-star" style="color: #f6b937;"></i>
+            <i class="fa-solid fa-star" style="color: #f6b937;"></i>
+            <i class="fa-solid fa-star" style="color: #f6b937;"></i>
+            <i class="fa-solid fa-star" style="color: #f6b937;"></i>
+            <i class="fa-regular fa-star" style="color: #f6b937;"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-box">
+            <img src="./photos/review3.jpg" alt="image">
+          </div>
+          <div class="content">
+            <h3>Moxie M</h3>
+            <p>"Great food and service, highly recommended!"<br><span>- Moxie M </span></p>
+          </div>
+          <div class="rating">
+            <i class="fa-solid fa-star" style="color: #f6b937;"></i>
+            <i class="fa-solid fa-star" style="color: #f6b937;"></i>
+            <i class="fa-solid fa-star" style="color: #f6b937;"></i>
+            <i class="fa-solid fa-star" style="color: #f6b937;"></i>
+            <i class="fa-regular fa-star" style="color: #f6b937;"></i>
+          </div>
+        </div>
+       </div>  
+  </section>
+  <section id="booking">
+      <div class=" container booking p-3" id="book">
+        <h3>For Booking</h3>
+        <form>
+          <div class="mb-4 mt-3">
+            <div class="row">
+              <div class="col">
+                <label for="InputName1" class="form-label">Name</label>
+                <input type="text" class="form-control" placeholder="Enter Name" name="Name">
+              </div>
+              <div class="col">
+                <label for="InputEmail1" class="form-label">Email</label>
+                <input type="password" class="form-control" placeholder="Enter email" name="mail">
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="row">
+              <div class="col">
+                <label for="InputMobile1" class="form-label">Mobile</label>
+                <input type="text" class="form-control" placeholder="Enter Mobile Number" name="mobile">
+              </div>
+              <div class="col">
+                <label for="InputPlace1" class="form-label">Place</label>
+                <input type="text" class="form-control" placeholder="Enter your Place" name="place">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="InputSeat1" class="form-label">No:of Seats</label>
+              <input type="number" class="form-control" placeholder="Enter No:of Seats" name="seat">
+            </div>
+            <div class="col mb-3">
+              <label for="InputDate1" class="form-label">Pick Date</label>
+              <input type="month" class="form-control" placeholder="Enter Date" name="date">
+            </div>
+          </div>
+          <div class="mb-4 form-check">
+            <input type="checkbox" class="form-check-input" id="Check1">
+            <label class="form-check-label" for="Check1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-warning mb-3">Submit</button>
+        </form>
+
+      </div>
+  </section>
+  <section id="contact">
+  </section>
+  <footer  class="footer" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col footer-col ftr1">
+            <h4>About Us</h4>
+            <p>Don’t let hunger take control of you. Beat it with Boosted RestoCafe!"</p>
+            <p>Forget about the daily stress and come relax with us. After tasting any of our menu items, you will never want to leave!"</p>
+          </div>
+          <div class="col footer-col ftr2">
+            <h4>Boosted RestoCafe </h4>
+            <ul>
+                <li><a href="#head"> Home</a> </li>
+                <li><a href="#about"> About us</a> </li>
+                <li><a href="#location"> Location </a> </li>
+                <li><a href="#menu"> Dishes </a> </li>
+                <li><a href="#offers"> offers</a> </li>
+                <li><a href="#gallery"> Gallery</a> </li>
+                <li><a href="#review"> Reviews</a> </li>
+                <li><a href="#booking"> For Bokking</a> </li>
+            </ul> 
+          </div>
+          <div class="col footer-col ftr3">
+            <h4>Our Locations</h4>
+            <ul>
+              <li><a href="#location">Kochi</a> </li>
+              <li><a href="#location">Chennai</a> </li>
+              <li><a href="#location">Bengaluru</a> </li>
+            </ul>
+            <div class="social" >
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href=""><i class="fa-brands fa-facebook"> </i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+  </footer>
+  <div class="scroll-container">
+    <a href="#head">
+      <i class="fa-solid fa-up-long" id="scroll"></i>
+    </a>
+  </div>
+  <div class="copyright">
+    <p id="copyright"> <i class="fa-solid fa-copyright"></i> CopyRight owned by Boosted RestoCafe</p>
+  </div>
+</body>
+
+<!--Bootstrap Script-->
+<!-- <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p> -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</html>
